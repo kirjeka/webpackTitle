@@ -1,0 +1,52 @@
+@import 'normalize.css';
+@import 'media.css';
+@import 'fonts.css';
+
+html {
+  font-family: 'MuseoSans', sans-serif;
+}
+
+body {
+  display: block;
+
+  @media (--xs-only) {
+    border: 5px solid yellow;
+  }
+
+  @media (--sm-only) {
+    border: 5px solid aqua;
+  }
+
+  @media (--md-only) {
+    border: 5px solid blue;
+  }
+
+  @media (--lg-only) {
+    border: 5px solid violet;
+  }
+}
+
+.background {
+  height: 180px;
+  background-image: url('../img/body_background.png');
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  border: 5px solid green;
+}
+
+.footer {
+  border: 5px solid green;
+  background-color: black;
+}
+
+.swiper-container {
+  margin: 12px;
+  border: 5px solid violet;
+}
